@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using Dominio;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -15,7 +13,7 @@ namespace Aplicacion.Cursos
             private readonly CursosOnlineContext _context;
             public Manejador(CursosOnlineContext context)
             {
-              this._context = context; 
+              _context = context; 
             }
             public async Task<List<Curso>> Handle(ListaCursos request, CancellationToken cancellationToken)
             {

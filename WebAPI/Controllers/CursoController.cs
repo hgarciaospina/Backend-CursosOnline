@@ -1,20 +1,24 @@
 using Microsoft.AspNetCore.Mvc;
 using Dominio;
-using Persistencia;
+using MediatR;
+using Aplicacion.Cursos;
 
 namespace WebAPI.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+//http://loclahost:5200/api/Cursos
+[Route("api/[controller]")]
 public class CursoController : ControllerBase
 {
   
-  private readonly CursosOnlineContext _context;
-  public CursoController(CursosOnlineContext context)
+  private readonly IMediator _mediator;
+  public CursoController(IMediator mediator)
   {
-    this._context = context;
+    _mediator = mediator;
   }
 
   [HttpGet]
-  public IEnumerable<Curso> Get() => _context.Curso.ToList();
+  public async Task<ActionResult<List<Curso>>> Get() {
+    return await _mediator.Send(new Consulta.ListaCursos());
+  }
 }

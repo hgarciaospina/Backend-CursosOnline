@@ -12,5 +12,6 @@ namespace Dominio
         public int Puntaje {get; set;}
         public string? DescripcionComentario {get; set;}  
         public int CursoId {get; set;}  
+         public required Curso Curso {get; set;}
     }
 }

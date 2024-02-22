@@ -9,5 +9,7 @@ namespace Dominio
     {
         public int CursoId {get; set;}
         public int InstructorId {get; set;}
+         public required Curso Curso {get; set;}
+        public required Instructor Instructor {get; set;}
     }
 }

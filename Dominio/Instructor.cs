@@ -12,5 +12,6 @@ namespace Dominio
         public string? Apellido {get; set;}
         public string? Grado {get; set;}
         public byte[]? FotoPerfil {get; set;}
+        public required ICollection<CursoInstructor> CursosLink {get; set;} 
     }
 }

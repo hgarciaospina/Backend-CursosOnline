@@ -107,6 +107,43 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Aplicacion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Dominio": "1.0.0",
+          "Persistencia": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Aplicacion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aplicacion.dll": {}
+        }
+      },
+      "Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dominio.dll": {}
+        }
+      },
+      "Persistencia/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Persistencia.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Persistencia.dll": {}
+        }
       }
     }
   },
@@ -451,10 +488,26 @@
         "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Aplicacion/1.0.0": {
+      "type": "project",
+      "path": "../Aplicacion/Aplicacion.csproj",
+      "msbuildProject": "../Aplicacion/Aplicacion.csproj"
+    },
+    "Dominio/1.0.0": {
+      "type": "project",
+      "path": "../Dominio/Dominio.csproj",
+      "msbuildProject": "../Dominio/Dominio.csproj"
+    },
+    "Persistencia/1.0.0": {
+      "type": "project",
+      "path": "../Persistencia/Persistencia.csproj",
+      "msbuildProject": "../Persistencia/Persistencia.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Aplicacion >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.5",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
@@ -465,11 +518,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "d:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "D:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj",
+      "projectPath": "d:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "D:\\BackendCursosOnLine\\WebAPI\\obj\\",
+      "outputPath": "d:\\BackendCursosOnLine\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -485,7 +538,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj": {
+              "projectPath": "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

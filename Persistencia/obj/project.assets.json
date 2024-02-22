@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dominio.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Dominio/1.0.0": {
+      "type": "project",
+      "path": "../Dominio/Dominio.csproj",
+      "msbuildProject": "../Dominio/Dominio.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Dominio >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\USUARIO\\.nuget\\packages\\": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj",
+      "projectUniqueName": "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj",
       "projectName": "Persistencia",
-      "projectPath": "D:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj",
+      "projectPath": "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj",
       "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "D:\\BackendCursosOnLine\\Persistencia\\obj\\",
+      "outputPath": "d:\\BackendCursosOnLine\\Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +52,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
+              "projectPath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

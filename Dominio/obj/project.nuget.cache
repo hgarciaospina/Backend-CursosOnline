@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KPFwqe1HvXMVVSm/94I7TaiySOHmyLYAvXaei5KwAaRPJ8uJWsUy2UBUEqkLMlvDHxzfPxkBPcXOBCPpA+YpPg==",
+  "dgSpecHash": "UGCqGw0byfIyuNRpKnLPE0d3w4AJj1+GTLCmJR5pmEYzN6lLwK/T3voq67xxQmVku3xNN6WB/yjhX2Bvu0+qhg==",
   "success": true,
-  "projectFilePath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
+  "projectFilePath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

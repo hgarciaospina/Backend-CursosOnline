@@ -4,14 +4,14 @@
     "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj": {}
   },
   "projects": {
-    "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
+    "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
+        "projectPath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "d:\\BackendCursosOnLine\\Dominio\\obj\\",
+        "outputPath": "D:\\BackendCursosOnLine\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,6 +51,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -83,8 +86,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
-                "projectPath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
+              "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
+                "projectPath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -98,6 +101,24 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.28, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -110,6 +131,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

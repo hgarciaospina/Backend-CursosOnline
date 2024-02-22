@@ -4,14 +4,14 @@
     "d:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj": {
+    "D:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj",
+        "projectUniqueName": "D:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj",
         "projectName": "Aplicacion",
-        "projectPath": "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj",
+        "projectPath": "D:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "d:\\BackendCursosOnLine\\Aplicacion\\obj\\",
+        "outputPath": "D:\\BackendCursosOnLine\\Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
-                "projectPath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
+              "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
+                "projectPath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
               },
               "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj": {
                 "projectPath": "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj"
@@ -46,6 +46,24 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "iTextSharp.LGPLv2.Core": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,6 +76,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -66,14 +87,14 @@
         }
       }
     },
-    "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
+    "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
+        "projectPath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "d:\\BackendCursosOnLine\\Dominio\\obj\\",
+        "outputPath": "D:\\BackendCursosOnLine\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -113,6 +134,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -145,8 +169,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
-                "projectPath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
+              "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
+                "projectPath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -160,6 +184,24 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.28, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -172,6 +214,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -204,8 +249,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj": {
-                "projectPath": "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj"
+              "D:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj": {
+                "projectPath": "D:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj"
               }
             }
           }
@@ -220,9 +265,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
-                "projectPath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
+              "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
+                "projectPath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
               },
               "D:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj": {
                 "projectPath": "D:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj"
@@ -87,14 +87,14 @@
         }
       }
     },
-    "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
+    "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
+        "projectPath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "d:\\BackendCursosOnLine\\Dominio\\obj\\",
+        "outputPath": "D:\\BackendCursosOnLine\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -169,8 +169,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
-                "projectPath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
+              "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
+                "projectPath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
               }
             }
           }

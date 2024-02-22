@@ -6,7 +6,6 @@ using Aplicacion.Cursos;
 namespace WebAPI.Controllers;
 
 [ApiController]
-//http://loclahost:5200/api/Cursos
 [Route("api/[controller]")]
 public class CursoController : ControllerBase
 {
@@ -17,8 +16,17 @@ public class CursoController : ControllerBase
     _mediator = mediator;
   }
 
+  //http://loclahost:5200/api/Curso 
   [HttpGet]
-  public async Task<ActionResult<List<Curso>>> Get() {
+  public async Task<ActionResult<List<Curso>>> Get() 
+  {
     return await _mediator.Send(new Consulta.ListaCursos());
+  }
+
+  //http://loclahost:5200/api/Curso/1
+  [HttpGet("{id}")]
+  public async Task<ActionResult<Curso>> GetById(int id)
+  {
+    return await  _mediator.Send(new ConsultaPorId.CursoUnico{Id = id});
   }
 }

@@ -6756,11 +6756,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
-              "projectPath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
+            "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
+              "projectPath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
             },
-            "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj": {
-              "projectPath": "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj"
+            "D:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj": {
+              "projectPath": "D:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj"
             }
           }
         }

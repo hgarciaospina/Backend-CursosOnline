@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {}
+    "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
+    "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
+        "projectPath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\BackendCursosOnLine\\Dominio\\obj\\",
+        "outputPath": "d:\\BackendCursosOnLine\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",

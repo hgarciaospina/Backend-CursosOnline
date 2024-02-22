@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XskpXOTaXaSY3LznTqK1znc0pyJIMcpo9oU/lt3Oq/YZTsk1s181emHuaApzhgVW9AidA5ntWgXGUrn7iEiTTw==",
+  "dgSpecHash": "mFZfRN+INFw5DzUypEapOwd67PPLDyFiJ6FMXNHWk1E9EbMi19f/4WHOElRg0FZdtJMC6clQOPtpcIJOlCOUVg==",
   "success": true,
-  "projectFilePath": "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj",
+  "projectFilePath": "D:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

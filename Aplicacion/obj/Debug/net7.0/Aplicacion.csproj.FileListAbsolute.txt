@@ -1,0 +1,17 @@
+D:\BackendCursosOnLine\Aplicacion\bin\Debug\net7.0\Aplicacion.deps.json
+D:\BackendCursosOnLine\Aplicacion\bin\Debug\net7.0\Aplicacion.dll
+D:\BackendCursosOnLine\Aplicacion\bin\Debug\net7.0\Aplicacion.pdb
+D:\BackendCursosOnLine\Aplicacion\bin\Debug\net7.0\Dominio.dll
+D:\BackendCursosOnLine\Aplicacion\bin\Debug\net7.0\Persistencia.dll
+D:\BackendCursosOnLine\Aplicacion\bin\Debug\net7.0\Dominio.pdb
+D:\BackendCursosOnLine\Aplicacion\bin\Debug\net7.0\Persistencia.pdb
+D:\BackendCursosOnLine\Aplicacion\obj\Debug\net7.0\Aplicacion.csproj.AssemblyReference.cache
+D:\BackendCursosOnLine\Aplicacion\obj\Debug\net7.0\Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+D:\BackendCursosOnLine\Aplicacion\obj\Debug\net7.0\Aplicacion.AssemblyInfoInputs.cache
+D:\BackendCursosOnLine\Aplicacion\obj\Debug\net7.0\Aplicacion.AssemblyInfo.cs
+D:\BackendCursosOnLine\Aplicacion\obj\Debug\net7.0\Aplicacion.csproj.CoreCompileInputs.cache
+D:\BackendCursosOnLine\Aplicacion\obj\Debug\net7.0\Aplicacion.csproj.CopyComplete
+D:\BackendCursosOnLine\Aplicacion\obj\Debug\net7.0\Aplicacion.dll
+D:\BackendCursosOnLine\Aplicacion\obj\Debug\net7.0\refint\Aplicacion.dll
+D:\BackendCursosOnLine\Aplicacion\obj\Debug\net7.0\Aplicacion.pdb
+D:\BackendCursosOnLine\Aplicacion\obj\Debug\net7.0\ref\Aplicacion.dll

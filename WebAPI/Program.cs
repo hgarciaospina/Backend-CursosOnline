@@ -1,4 +1,5 @@
 using Aplicacion.Cursos;
+using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistencia;
@@ -7,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddFluentValidation( cfg => cfg.RegisterValidatorsFromAssemblyContaining<Nuevo>());
 builder.Services.AddDbContext<CursosOnlineContext>(opt => {
   opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 }); 

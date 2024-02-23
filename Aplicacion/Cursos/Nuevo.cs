@@ -1,8 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Dominio;
+using FluentValidation;
 using MediatR;
 using Persistencia;
 
@@ -12,11 +9,20 @@ namespace Aplicacion.Cursos
     {
         public class Ejecuta : IRequest 
         {
-            public string? Titulo {get; set;}
-            public string? Descripcion {get; set;}
-            public DateTime FechaPublicacion {get; set;}
+            public required string Titulo {get; set;}
+            public required string Descripcion {get; set;}
+            public required DateTime FechaPublicacion {get; set;}
         }
 
+        public class EjecutaValidacion : AbstractValidator<Ejecuta>
+        {
+            public EjecutaValidacion()
+            {
+               RuleFor( cu => cu.Titulo).NotEmpty();
+               RuleFor( cu => cu.Descripcion).NotEmpty(); 
+               RuleFor( cu => cu.FechaPublicacion).NotEmpty();
+            }
+        }
         public class Manejador : IRequestHandler<Ejecuta>
         {
             private readonly CursosOnlineContext _context;

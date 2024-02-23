@@ -31,8 +31,8 @@
               "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
                 "projectPath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
               },
-              "D:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "D:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj"
+              "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -145,14 +145,14 @@
         }
       }
     },
-    "D:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj": {
+    "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "D:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj",
+        "projectPath": "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\BackendCursosOnLine\\Persistencia\\obj\\",
+        "outputPath": "d:\\BackendCursosOnLine\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,7 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Net;
+using Aplicacion.ManejadorError;
 using FluentValidation;
 using MediatR;
 using Persistencia;
@@ -28,9 +26,6 @@ namespace Aplicacion.Cursos
             }
         }
 
-
-
-
         public class Manejador : IRequestHandler<Ejecuta>
         {
             private readonly CursosOnlineContext _context;
@@ -41,17 +36,26 @@ namespace Aplicacion.Cursos
             }
             public async Task<Unit> Handle(Ejecuta request, CancellationToken cancellationToken)
             {
-                var curso = await _context.Curso.FindAsync(request.CursoId) ?? throw new Exception("El curso no existe");
+            
+               var curso = await _context.Curso.FindAsync(request.CursoId);
+               
+               if(curso == null)
+               {
+                  throw new ManejadorExcepcion(
+                            HttpStatusCode.NotFound, 
+                            new {curso = $"No existe el curso con el Id {request.CursoId} a ser modificado"});
 
-                curso.Titulo = request.Titulo ?? curso.Titulo;
-                curso.Descripcion = request.Descripcion ?? curso.Descripcion;
-                curso.FechaPublicacion = request.FechaPublicacion;
+               }
+
+                 curso.Titulo = request.Titulo;
+                 curso.Descripcion = request.Descripcion;
+                 curso.FechaPublicacion = request.FechaPublicacion;
 
                 var resultado = await _context.SaveChangesAsync();
 
                 if(resultado>0) return Unit.Value;
 
-                throw new Exception("No se guardaron los cambios en el curso");       
+                throw new Exception($"No se guardaron los cambios en el curso de Id: {request.CursoId}");       
                 
             }
         }

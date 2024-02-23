@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
+using Aplicacion.ManejadorError;
 using Dominio;
 using MediatR;
 using Persistencia;
@@ -25,7 +27,12 @@ namespace Aplicacion.Cursos
 
             public async Task<Curso> Handle(CursoUnico request, CancellationToken cancellationToken)
             {
-                var curso = await _context.Curso.FindAsync(request.Id);
+                Curso? curso = await _context.Curso.FindAsync(request.Id)
+                                     ?? throw new ManejadorExcepcion(
+                                       HttpStatusCode.NotFound,
+                                       new { curso = $"No existe el curso con el Id {request.Id} a ser consultado" });
+
+
                 return curso;
             }
         }

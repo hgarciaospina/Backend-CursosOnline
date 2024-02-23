@@ -19,7 +19,7 @@ namespace WebAPI.Middleware
           _logger = logger;
         }
         
-        public async Task Invocar(HttpContext context)
+        public async Task Invoke(HttpContext context)
         {
             try{
                 await _next(context);

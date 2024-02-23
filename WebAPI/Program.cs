@@ -3,12 +3,16 @@ using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistencia;
+using WebAPI.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+// Configuraciónn de validaciones
 builder.Services.AddControllers().AddFluentValidation( cfg => cfg.RegisterValidatorsFromAssemblyContaining<Nuevo>());
+
+//Configuración cadena de conexión
 builder.Services.AddDbContext<CursosOnlineContext>(opt => {
   opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 }); 
@@ -21,6 +25,9 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+
+//Configuración manejo de errores
+app.UseMiddleware<ManejadorErrorMiddleware>();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

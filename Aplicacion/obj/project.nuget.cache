@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MDqw+U4vm4I0PBfGbZp0LTtExE2CIMg4OKv/zyJgZWFNRRV5pQyU6ut4parZb6NbrkI65QPIWY0euGMsiNrALQ==",
+  "dgSpecHash": "JW9savAC866QZHGaWMUZk/+T8ZOrmxf4v98G3eYX407+DqCdODkvJ8PKoSaji6TWqXoIMbEvMzmpcYSH2pgHpA==",
   "success": true,
-  "projectFilePath": "D:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj",
+  "projectFilePath": "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TH/zkIdDr6Cw/AXK34yhFkGlHPx1mKhpRkOfiBn0vbn2M+1LqKkeIHqcMWw5DhY0ds5Wi0sE/hDu2ZvPO3UJzQ==",
+  "dgSpecHash": "TZ1XZQiv6d+CFW8oYvNYGxk20EiwvMQO5Oc7QqOayWPGhvb8l0xvftA2SJliAkpykh4Ns0f/kP4VUHsA2tUdLQ==",
   "success": true,
-  "projectFilePath": "D:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "d:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

@@ -7285,11 +7285,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "D:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "d:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj",
+      "projectPath": "D:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "d:\\BackendCursosOnLine\\WebAPI\\obj\\",
+      "outputPath": "D:\\BackendCursosOnLine\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7306,8 +7306,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj": {
-              "projectPath": "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj"
+            "D:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj": {
+              "projectPath": "D:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj"
             }
           }
         }

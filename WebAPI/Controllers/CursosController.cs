@@ -37,12 +37,18 @@ public class CursosController : ControllerBase
     return await _mediator.Send(data);
   }
 
+  /* http://localhost:5200/api/Cursos/1 */
   [HttpPut("{id}")]
   public async Task<ActionResult<Unit>> Editar(int id, Editar.Ejecuta data)
   {
     data.CursoId = id;
     return await  _mediator.Send(data);
   }
- 
 
+  /* http://localhost:5200/api/Cursos/1 */
+  [HttpDelete("{id}")]
+  public async Task<ActionResult<Unit>> Eliminar(int id)
+  {
+    return await _mediator.Send(new Eliminar.Ejecuta{Id = id});
+  }
 }

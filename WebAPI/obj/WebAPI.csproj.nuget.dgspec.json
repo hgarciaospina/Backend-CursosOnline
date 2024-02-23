@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj": {}
+    "d:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "D:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj": {
+    "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj",
+        "projectUniqueName": "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj",
         "projectName": "Aplicacion",
-        "projectPath": "D:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj",
+        "projectPath": "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\BackendCursosOnLine\\Aplicacion\\obj\\",
+        "outputPath": "d:\\BackendCursosOnLine\\Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
-                "projectPath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
+              "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
+                "projectPath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
               },
               "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj": {
                 "projectPath": "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj"
@@ -87,14 +87,14 @@
         }
       }
     },
-    "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
+    "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
+        "projectPath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\BackendCursosOnLine\\Dominio\\obj\\",
+        "outputPath": "d:\\BackendCursosOnLine\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -169,8 +169,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
-                "projectPath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
+              "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
+                "projectPath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -225,14 +225,14 @@
         }
       }
     },
-    "D:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj": {
+    "d:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "d:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "D:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj",
+        "projectPath": "d:\\BackendCursosOnLine\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\BackendCursosOnLine\\WebAPI\\obj\\",
+        "outputPath": "d:\\BackendCursosOnLine\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -249,8 +249,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj": {
-                "projectPath": "D:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj"
+              "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj": {
+                "projectPath": "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj"
               }
             }
           }

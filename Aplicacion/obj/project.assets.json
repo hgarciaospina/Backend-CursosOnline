@@ -6735,11 +6735,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj",
+      "projectUniqueName": "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj",
       "projectName": "Aplicacion",
-      "projectPath": "D:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj",
+      "projectPath": "d:\\BackendCursosOnLine\\Aplicacion\\Aplicacion.csproj",
       "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "D:\\BackendCursosOnLine\\Aplicacion\\obj\\",
+      "outputPath": "d:\\BackendCursosOnLine\\Aplicacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6756,8 +6756,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
-              "projectPath": "D:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
+            "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj": {
+              "projectPath": "d:\\BackendCursosOnLine\\Dominio\\Dominio.csproj"
             },
             "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj": {
               "projectPath": "d:\\BackendCursosOnLine\\Persistencia\\Persistencia.csproj"

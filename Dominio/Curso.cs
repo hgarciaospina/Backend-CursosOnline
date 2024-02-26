@@ -7,7 +7,7 @@ namespace Dominio
 {
     public class Curso
     {
-        public int CursoId {get; set;}
+        public Guid CursoId {get; set;}
         public required string Titulo {get; set;}
         public required string Descripcion {get; set;}
         public required DateTime FechaPublicacion {get; set;}

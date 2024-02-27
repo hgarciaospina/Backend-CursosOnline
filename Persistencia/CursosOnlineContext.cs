@@ -1,15 +1,12 @@
 using Dominio;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Persistencia
 {
-    public class CursosOnlineContext : DbContext
-    {
-        public CursosOnlineContext()
-        {
-
-        }
-
+    public class CursosOnlineContext : IdentityDbContext<Usuario>    {
+       
         public CursosOnlineContext(DbContextOptions options) : base(options)
         {
 
@@ -36,12 +33,16 @@ namespace Persistencia
             modelBuilder.Entity<Precio>()
             .HasKey(pre => new { pre.PrecioId });
 
-            modelBuilder.Entity<Precio>(entity => 
+            modelBuilder.Entity<Precio>(entity =>
             {
-              entity.Property(pa => pa.PrecioActual).HasColumnType("numeric(12,2)");
-              entity.Property(pr => pr.Promocion).HasColumnType("numeric(12,2)");
-            });   
-                     
+                entity.Property(pa => pa.PrecioActual).HasColumnType("numeric(12,2)");
+                entity.Property(pr => pr.Promocion).HasColumnType("numeric(12,2)");
+            });
+
+            modelBuilder.Entity<IdentityUserLogin<string>>().HasNoKey();
+            modelBuilder.Entity<IdentityUserRole<string>>().HasNoKey();
+            modelBuilder.Entity<IdentityUserToken<string>>().HasNoKey();
+
         }
         public DbSet<Curso> Curso {get; set;}
         public DbSet<Precio> Precio {get; set;}

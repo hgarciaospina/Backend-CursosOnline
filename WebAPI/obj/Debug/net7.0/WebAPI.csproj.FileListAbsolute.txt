@@ -92,3 +92,4 @@ D:\BackendCursosOnLine\WebAPI\obj\Debug\net7.0\refint\WebAPI.dll
 D:\BackendCursosOnLine\WebAPI\obj\Debug\net7.0\WebAPI.pdb
 d:\BackendCursosOnLine\WebAPI\obj\Debug\net7.0\WebAPI.genruntimeconfig.cache
 d:\BackendCursosOnLine\WebAPI\obj\Debug\net7.0\ref\WebAPI.dll
+D:\BackendCursosOnLine\WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

@@ -24,6 +24,22 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// Configuración ejecución de migraciones
+using (var ambiente = app.Services.CreateScope()) 
+{
+    var services = ambiente.ServiceProvider;
+
+    try {
+        var context = services.GetRequiredService<CursosOnlineContext>();
+        context.Database.Migrate();
+    }
+    catch(Exception e) {
+        var loggin = services.GetRequiredService<ILogger<Program>>();
+        loggin.LogError(e, "!! Ocurrió un error corriendo la migración !!");
+    }
+}
+app.Run();
+
 // Configure the HTTP request pipeline.
 
 //Configuración manejo de errores

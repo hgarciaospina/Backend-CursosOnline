@@ -1,6 +1,8 @@
 using Aplicacion.Cursos;
+using Dominio;
 using FluentValidation.AspNetCore;
 using MediatR;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Persistencia;
 using WebAPI.Middleware;
@@ -11,6 +13,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Configuraciónn de validaciones
 builder.Services.AddControllers().AddFluentValidation( cfg => cfg.RegisterValidatorsFromAssemblyContaining<Nuevo>());
+
+// Configuración Core Identity en Web API para el manejo de la autenticación y la autorización
+var uBuilder = builder.Services.AddIdentityCore<Usuario>();
+var identityBuilder = new IdentityBuilder(uBuilder.UserType, uBuilder.Services);
+identityBuilder.AddEntityFrameworkStores<CursosOnlineContext>();
+identityBuilder.AddSignInManager<SignInManager<Usuario>>();
 
 //Configuración cadena de conexión
 builder.Services.AddDbContext<CursosOnlineContext>(opt => {
@@ -30,8 +38,10 @@ using (var ambiente = app.Services.CreateScope())
     var services = ambiente.ServiceProvider;
 
     try {
+        var userManager = services.GetRequiredService<UserManager<Usuario>>();
         var context = services.GetRequiredService<CursosOnlineContext>();
         context.Database.Migrate();
+        DataPrueba.InsertarData(context, userManager).Wait();
     }
     catch(Exception e) {
         var loggin = services.GetRequiredService<ILogger<Program>>();

@@ -2,8 +2,10 @@ using Aplicacion.Cursos;
 using Dominio;
 using FluentValidation.AspNetCore;
 using MediatR;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Persistencia;
 using WebAPI.Middleware;
 
@@ -19,6 +21,7 @@ var uBuilder = builder.Services.AddIdentityCore<Usuario>();
 var identityBuilder = new IdentityBuilder(uBuilder.UserType, uBuilder.Services);
 identityBuilder.AddEntityFrameworkStores<CursosOnlineContext>();
 identityBuilder.AddSignInManager<SignInManager<Usuario>>();
+builder.Services.TryAddSingleton<ISystemClock, SystemClock>();
 
 //Configuración cadena de conexión
 builder.Services.AddDbContext<CursosOnlineContext>(opt => {

@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace WebAPI.Controllers
 {
@@ -8,7 +7,7 @@ namespace WebAPI.Controllers
     [ApiController]
     public class GenericBaseController : ControllerBase
     {
-        private IMediator _mediator;
-        protected IMediator Mediator => _mediator ?? (_mediator = (IMediator?)HttpContext.RequestServices.GetServices<Mediator>());
+        private IMediator? _Mediator;
+        protected IMediator Mediator => _Mediator ?? (_Mediator = HttpContext.RequestServices.GetService<IMediator>());
     }
 }

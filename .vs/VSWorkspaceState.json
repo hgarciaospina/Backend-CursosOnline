@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Persistencia",
+    "\\WebAPI",
+    "\\WebAPI\\Controllers"
   ],
-  "SelectedNode": "\\BackendCursosOnLine.sln",
+  "SelectedNode": "\\WebAPI\\Controllers\\CursosController.cs",
   "PreviewInSolutionExplorer": false
 }

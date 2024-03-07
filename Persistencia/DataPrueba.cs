@@ -16,7 +16,7 @@ namespace Persistencia
                     UserName = "hegaro",
                     Email = "henrygarciaospina@gmail.com"
                 };
-                await usuarioManager.CreateAsync(usuario, "password123");
+                await usuarioManager.CreateAsync(usuario, "Leandro2009*");
             }
         }
     }
